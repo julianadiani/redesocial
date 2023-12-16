@@ -1,0 +1,438 @@
+/** Padrão **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #FAFAFA;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    padding: 15px;
+    background-color: #FAFAFA;
+}
+
+/** Botão **/
+.botao {
+    border-radius: 43px;
+    background: #17132D;
+    flex-shrink: 0;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-post {
+    border-radius: 43px;
+    background: #17132D;
+    flex-shrink: 0;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menuRedes {
+    float: right;
+}
+
+.menuRedes a {
+    font-size: 13px !important;
+    
+}
+
+.menuRedes svg {
+    width: 15px;
+    fill: #fff;
+    padding-right: 5px;
+}
+
+/** Campo Busca **/
+.input-container-botao {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+#btnAdicionar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    padding: 0px 4px 4px 4px;
+    background-color: #17132D;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 52px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 36px;
+    height: 36px;
+    line-height: 1;
+}
+
+#btnAdicionar:hover {
+    background-color: #17132D;
+}
+
+/** Foto de Perfil **/
+.fotoPerfil {
+    margin-top: 70px
+}
+.fotoPerfil img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.nomePerfil h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.nomePerfil h6 {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+/** Menu Lateral **/
+.opcoesMenu {
+    padding: 30px 0 50px;
+}
+
+.itensMenu {
+    list-style: none;
+    padding: 0;
+}
+
+.itensMenu li a {
+    padding: 10px 0;
+    margin: 3px 0;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.itensMenu img {
+    width: 19px;
+    height: auto;
+    padding-right: 3px;
+}
+
+/** botão sair **/
+.botaoSair a {
+    font-size: 16px !important;
+    padding: 12px 18px;
+}
+.botaoSair svg {
+    width: 17px;
+    fill: #fff;
+    padding-right: 5px;
+}
+
+/** Post **/
+#listaTweets {
+    list-style-type: none;
+    padding: 0;
+}
+
+.postBody {
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding:20px;
+    margin-top: 20px;
+}
+
+.imgPerfilPost img {
+    width: 45px;
+    float: left;
+    margin-right: 10px;
+}
+
+.perfilInfo h3 {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.perfilInfo h3 span {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    font-weight: 400;
+}
+.perfilInfo p {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.postConteudo {
+    padding: 10px 0;
+}
+
+.postConteudo p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+}
+
+.reacoesUsuarios ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.reacoesUsuarios li {
+    display: inline-block;
+    margin: 0 30px;
+    
+}
+
+.reacoesUsuarios li:first-child {
+    margin: 0 30px 0 0;
+}
+
+.reacoesUsuarios li:last-child {
+    margin: 0;
+    float: right;
+}
+
+.reacoesUsuarios img {
+    width: 18px;
+    height: auto;
+    padding-right: 3px;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .seguindoWrapper {
+    margin-left: auto; /* Empurra a seguindoWrapper para a direita */
+  }
+  
+  /* Exemplo de estilo para manter o layout responsivo */
+  .postHeader, .postBody, .postConteudo, .imagensWrapper, .postReacoes {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .postBody {
+    margin: 18px auto;
+  }
+  
+
+.btn-seguindo {
+    color: #777;
+    border-radius: 43px;
+    border: 1px solid #BBB;
+    background: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.imagensWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; 
+    overflow: hidden;
+  }
+  
+  .imagensWrapper img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+  }
+
+/** Barra Lateral Anúncios **/
+.anunciosRedes {
+    margin-top: 70px;
+}
+.anunciosRedes img {
+   width: 80%;
+   display: block;
+   margin: 20px 0;
+}
+
+
+/** Rodape **/
+.rodape {
+    background: #fff;
+    padding: 15px 0 10px;
+    text-align: center;
+}
+
+.rodape p {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.rodape span {
+    font-weight: 600;
+}
+
+/** Ação **/
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modalContent img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/** Responsivo **/
+@media (max-width: 991px) {
+    .main {
+        padding: 15px;
+    }
+
+    .col-md-3,
+    .col-md-6,
+    .col-md-12 {
+        padding: 0; 
+    }
+
+    .menuRedes {
+    display: none;
+    }
+
+    .fotoPerfil img {
+        width: 70px;
+    }
+
+    .anunciosRedes {
+        margin-top: 30px;
+    }
+
+    .fotoPerfil {
+        margin-top: 30px;
+    }
+
+    .botaoSair {
+        margin-bottom: 50px;
+    }
+
+    .anunciosRedes img {
+        width: 100%;
+     }
+}
+  
+@media (max-width: 767px) {
+    .botaoSair {
+        margin-bottom: 50px;
+    }
+
+    .menuRedes {
+        display: none;
+     }
+
+     .fotoPerfil {
+        margin-top: 30px;
+    }
+
+    .anunciosRedes img {
+        width: 100%;
+     }
+
+     .anunciosRedes {
+        margin-top: 30px;
+    }
+
+    .opcoesMenu {
+        padding: 15px 0;
+    }
+
+    .itensMenu li a {
+        padding: 8px 0; 
+    }
+}
