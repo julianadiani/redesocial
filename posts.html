@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Hub - Meu Feed</title>
+    <meta name="description" content="" />
+
+    <!-- CSS -->
+    <link href="css/css-post.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+    <div class="main">
+        <section class="menuRedes">
+            <a href="index.html" class="botao">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>
+                SAIR
+            </a>
+        </section>
+
+        <section class="novoPost">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="fotoPerfil">
+                            <img src="img/post/enzo-perfil.png" alt="Enzo Martinelli Perfil" />
+                            <div class="nomePerfil">
+                                <h2>Enzo Martinello</h2>
+                                <h6>@enzo_martinello</h6>
+                            </div>
+                        </div>
+                        <div class="opcoesMenu">
+                            <ul class="itensMenu">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/post/icone-home.png" alt="Feed">
+                                        Feed
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="perfil.html">
+                                        <img src="img/post/icone-perfil.png" alt="Perfil">   
+                                        Perfil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/post/icone-explorar.png" alt="Explorar">  
+                                        Explorar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/post/icone-trending.png" alt="Trending">  
+                                        Trending
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="botaoSair">
+                            <a href="index.html" class="botao">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>
+                                SAIR
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        
+                        <div class="input-container-botao" id="botaoSingular">
+                            <a href="#" class="botao-post" id="btnClique">
+                                Adicione um Post
+                            </a>
+                        </div>
+                        <div class="input-container hidden" id="botaoCompleto">
+                            <input type="text" id="novoTweet" placeholder="O que você está pensando?">
+                            <button type="button" id="btnAdicionar">+</button>
+                        </div>
+
+                        <ul id="listaTweets">
+                            <li class="postBody" id="tweetEnzo">
+                                <div class="postHeader">
+                                    <div class="imgPerfilPost">
+                                        <img src="img/post/enzo-perfil.png" alt="Enzo Martinelli Perfil" />
+                                    </div>
+                                    <div class="perfilInfo">
+                                        <h3>Enzo Martinelli <span>@enzo_martinelli</span></h3>
+                                        <p>Agora</p>
+                                    </div>
+                                    <div class="seguindoWrapper">
+                                        <a href="#" class="deletarItem"><img src="img/post/icone-lixeira.png" alt="RT"> </a>
+                                    </div>
+                                </div>
+                                <div class="postConteudo">
+                                    <p id="textoTweet">2024 vem aí! Novo ano, novo Enzo. 1/365</p>
+                                </div>
+                                <div class="postReacoes">
+                                    <div class="reacoesUsuarios">
+                                        <ul>
+                                            <li>
+                                                <img src="img/post/icone-like.png" alt="Curtidas"> 
+                                                35
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-comentarios.png" alt="Comentários"> 
+                                                
+                                                45
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-retweet.png" alt="RT"> 
+                                                9
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-compartilhar.png" alt="RT"> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                            </li>
+
+
+                            <li class="postBody">
+                                <div class="postHeader">
+                                    <div class="imgPerfilPost">
+                                        <img src="img/post/perfil-gigi.png" alt="Enzo Martinelli Perfil" />
+                                    </div>
+                                    <div class="perfilInfo">
+                                        <h3>Camila Junqueira <span>@camisju</span></h3>
+                                        <p>07 Dez</p>
+                                    </div>
+                                    <div class="seguindoWrapper">
+                                        <a href="#" class="btn-seguindo">Seguindo</a>
+                                    </div>
+                                </div>
+                                <div class="postConteudo">
+                                    <p>Hoje tem!! Festa de Med com as minhas meninas. Uhull!</p>
+                                </div>
+                                <div class="postReacoes">
+                                    <div class="reacoesUsuarios">
+                                        <ul>
+                                            <li>
+                                                <img src="img/post/icone-like.png" alt="Curtidas"> 
+                                                5
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-comentarios.png" alt="Comentários"> 
+                                                3
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-retweet.png" alt="RT"> 
+                                                1
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-compartilhar.png" alt="RT"> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="postBody">
+                                <div class="postHeader">
+                                    <div class="imgPerfilPost">
+                                        <img src="img/post/icone-zayn.png" alt="Gabriel Lima Perfil" />
+                                    </div>
+                                    <div class="perfilInfo">
+                                        <h3>Gabriel Lima <span>@gabigol</span></h3>
+                                        <p>05 Dez</p>
+                                    </div>
+                                    <div class="seguindoWrapper">
+                                        <a href="#" class="btn-seguindo">Seguindo</a>
+                                    </div>
+                                </div>
+                                <div class="postConteudo">
+                                    <p>
+                                        Palmeiras venceu!!<br>
+                                        Mundial vem aí! Verdão 2024.
+                                    </p>
+                                    <div class="imagensWrapper">
+                                        <img src="img/post/tweet-imagem1.jpg" class="modal-image" alt="Endrick Palmeiras" />
+                                        <img src="img/post/tweet-imagem2.webp" class="modal-image" alt="Palmeiras" />
+                                    </div>
+                                </div>
+                                <div class="postReacoes">
+                                    <div class="reacoesUsuarios">
+                                        <ul>
+                                            <li>
+                                                <img src="img/post/icone-like.png" alt="Curtidas"> 
+                                                30k
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-comentarios.png" alt="Comentários"> 
+                                                12k
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-retweet.png" alt="RT"> 
+                                                32k
+                                            </li>
+                                            <li>
+                                                <img src="img/post/icone-compartilhar.png" alt="RT"> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="anunciosRedes">
+                            <img src="img/post/anuncio1.png" alt="Anúncio 1" />
+                            <img src="img/post/anuncio2.png" alt="Anúncio 2" />
+                            <img src="img/post/anuncio3.png" alt="Anúncio 3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="rodape">
+        <div class="container">
+            <div class="col-md-12 col-lg-12">
+                <p>2023 © <span>SOCIAL HUB</span> by JFA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modalContent">
+            <img id="fullImage" src="#" alt="Imagem do modal">
+        </div>
+    </div>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <script src="js/script-post.js"></script>
+</body>
+</html>
