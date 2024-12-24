@@ -1,6 +1,6 @@
 # Projeto de Rede Social Estilo Twitter
 
-Este é um projeto de rede social inspirado no Twitter, desenvolvido como parte de um exercício no curso **JavaScript em 7 Dias + Projetos Reais**. O projeto simula a interação de adicionar itens em uma lista, como se fosse um tweet.
+Este é um projeto de rede social inspirado no Twitter, desenvolvido como parte de um exercício no curso **Desenvolvedor Web Front-End 2: Javascript**. O projeto simula a interação de adicionar itens em uma lista, como se fosse um tweet.
 
 ## Tecnologias Utilizadas
 
