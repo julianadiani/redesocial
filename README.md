@@ -15,7 +15,3 @@ Este é um projeto de rede social inspirado no Twitter, desenvolvido como parte 
 - O usuário pode adicionar tweets (itens na lista).
 - O layout foi projetado no Figma e desenvolvido diretamente no código.
 - Interações simples para adicionar, exibir e remover itens da lista.
-
-## Como Usar
-
-1. Clone o repositório:
